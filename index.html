@@ -1,0 +1,76 @@
+                 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="title">Survey form Microverse</h1>
+      <p id="description">
+        The user will write in his answers to the questions provided.
+      </p>
+      <form id="survey-form">
+        <label for='name' id="label-name">Name</label>
+        <input name="name" type="text" id="name" placeholder="Your name here" />
+        <label id="personal-email">email</label>
+        <input type="email" id="email" placeholder="Your email here" />
+        <label id="phone-number">Number</label>
+        <input
+          type="number"
+          id="number"
+          min="7"
+          max="12"
+          placeholder="Your telephone number here"
+        />
+        <label id="language">Preferred language</label>
+        <select>
+          <!-- <option disabled>Select a Language</option> -->
+          <option value="javascript">Javascript</option>
+          <option value="python">Python</option>
+          <option value="c++">C++</option>
+        </select>
+        <div class="radio">
+          <p class="descriptor">Developer Stack</p>
+          <label for="backend"
+            ><input
+              id="backend"
+              type="radio"
+              name="developer-stack"
+            />Backend</label
+          >
+          <label for="frontend"
+            ><input
+              id="frontend"
+              type="radio"
+              name="developer-stack"
+            />Frontend</label
+          >
+        </div>
+        <div class="checkbox">
+          <p class="descriptor">Languages to learn</p>
+          <label for="javascript"
+            ><input
+              id="javascript"
+              type="checkbox"
+              name="preferred"
+            />Javascript</label
+          >
+          <label for="python"
+            ><input id="python" type="checkbox" name="preferred" />Python</label
+          >
+          <label for="c++"
+            ><input id="c++" type="checkbox" name="preferred" />C++</label
+          >
+        </div>
+        <label id="commentlabel">Comments</label
+        ><textarea id="comments" placeholder="Your input here"></textarea>
+        <button class="btn" type="submit">This button submits the form</button>
+      </form>
+    </div>
+  </body>
+</html>
